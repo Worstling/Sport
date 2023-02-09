@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE37AB732994244400B03F6C /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE37AB712994244400B03F6C /* Roboto-Medium.ttf */; };
+		CE37AB742994244400B03F6C /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE37AB722994244400B03F6C /* Roboto-Bold.ttf */; };
+		CE37AB792995408200B03F6C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37AB782995408200B03F6C /* UIView.swift */; };
 		CE82F4DF28FF115100FB6AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82F4DE28FF115100FB6AF0 /* AppDelegate.swift */; };
 		CE82F4E128FF115100FB6AF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82F4E028FF115100FB6AF0 /* SceneDelegate.swift */; };
-		CE82F4E328FF115100FB6AF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82F4E228FF115100FB6AF0 /* ViewController.swift */; };
-		CE82F4E628FF115100FB6AF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE82F4E428FF115100FB6AF0 /* Main.storyboard */; };
+		CE82F4E328FF115100FB6AF0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82F4E228FF115100FB6AF0 /* MainViewController.swift */; };
 		CE82F4E828FF115600FB6AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE82F4E728FF115600FB6AF0 /* Assets.xcassets */; };
 		CE82F4EB28FF115600FB6AF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE82F4E928FF115600FB6AF0 /* LaunchScreen.storyboard */; };
+		CEFF1B4F2901E2560029BF61 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF1B4E2901E2550029BF61 /* CalendarView.swift */; };
+		CEFF1B5129096D8D0029BF61 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF1B5029096D8D0029BF61 /* WeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE37AB712994244400B03F6C /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		CE37AB722994244400B03F6C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		CE37AB782995408200B03F6C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		CE82F4DB28FF115100FB6AF0 /* Sport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE82F4DE28FF115100FB6AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE82F4E028FF115100FB6AF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE82F4E228FF115100FB6AF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE82F4E528FF115100FB6AF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE82F4E228FF115100FB6AF0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE82F4E728FF115600FB6AF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE82F4EA28FF115600FB6AF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE82F4EC28FF115600FB6AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFF1B4E2901E2550029BF61 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		CEFF1B5029096D8D0029BF61 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE37AB7029941F7E00B03F6C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CE37AB722994244400B03F6C /* Roboto-Bold.ttf */,
+				CE37AB712994244400B03F6C /* Roboto-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CE37AB7529953FD500B03F6C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE37AB762995401E00B03F6C /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE37AB762995401E00B03F6C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CE37AB782995408200B03F6C /* UIView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		CE82F4D228FF115000FB6AF0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +89,58 @@
 		CE82F4DD28FF115100FB6AF0 /* Sport */ = {
 			isa = PBXGroup;
 			children = (
+				CEFF1B4B2900919F0029BF61 /* MainModule */,
+				CEFF1B4929008F3B0029BF61 /* Application */,
+				CEFF1B4A29008F8F0029BF61 /* Resources */,
+			);
+			path = Sport;
+			sourceTree = "<group>";
+		};
+		CEFF1B4929008F3B0029BF61 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				CE82F4DE28FF115100FB6AF0 /* AppDelegate.swift */,
 				CE82F4E028FF115100FB6AF0 /* SceneDelegate.swift */,
-				CE82F4E228FF115100FB6AF0 /* ViewController.swift */,
-				CE82F4E428FF115100FB6AF0 /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CEFF1B4A29008F8F0029BF61 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE37AB7029941F7E00B03F6C /* Fonts */,
 				CE82F4E728FF115600FB6AF0 /* Assets.xcassets */,
 				CE82F4E928FF115600FB6AF0 /* LaunchScreen.storyboard */,
 				CE82F4EC28FF115600FB6AF0 /* Info.plist */,
 			);
-			path = Sport;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEFF1B4B2900919F0029BF61 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				CE37AB7529953FD500B03F6C /* Extensions */,
+				CEFF1B4D290094A40029BF61 /* Controllers */,
+				CEFF1B4C290092480029BF61 /* View */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		CEFF1B4C290092480029BF61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF1B4E2901E2550029BF61 /* CalendarView.swift */,
+				CEFF1B5029096D8D0029BF61 /* WeatherView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEFF1B4D290094A40029BF61 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE82F4E228FF115100FB6AF0 /* MainViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +203,8 @@
 			files = (
 				CE82F4EB28FF115600FB6AF0 /* LaunchScreen.storyboard in Resources */,
 				CE82F4E828FF115600FB6AF0 /* Assets.xcassets in Resources */,
-				CE82F4E628FF115100FB6AF0 /* Main.storyboard in Resources */,
+				CE37AB742994244400B03F6C /* Roboto-Bold.ttf in Resources */,
+				CE37AB732994244400B03F6C /* Roboto-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE82F4E328FF115100FB6AF0 /* ViewController.swift in Sources */,
+				CEFF1B5129096D8D0029BF61 /* WeatherView.swift in Sources */,
+				CE82F4E328FF115100FB6AF0 /* MainViewController.swift in Sources */,
 				CE82F4DF28FF115100FB6AF0 /* AppDelegate.swift in Sources */,
+				CEFF1B4F2901E2560029BF61 /* CalendarView.swift in Sources */,
+				CE37AB792995408200B03F6C /* UIView.swift in Sources */,
 				CE82F4E128FF115100FB6AF0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +227,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE82F4E428FF115100FB6AF0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE82F4E528FF115100FB6AF0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE82F4E928FF115600FB6AF0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -217,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -290,12 +362,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Sport/Info.plist;
+				INFOPLIST_FILE = Sport/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,12 +389,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Sport/Info.plist;
+				INFOPLIST_FILE = Sport/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
