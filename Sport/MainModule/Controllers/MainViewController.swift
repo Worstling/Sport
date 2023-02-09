@@ -24,17 +24,20 @@ class MainViewController: UIViewController {
         label.text = "Your Name"
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.5
+        label.font = .robotoMedium24()
+        label.textColor = .specialGray
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private lazy var addWorkoutButton: UIButton = {    //1.создали объект
         let button = UIButton(type: .system)
-        button.backgroundColor = #colorLiteral(red: 0.9963216186, green: 0.8627745509, blue: 0.4291383028, alpha: 1)
+        button.backgroundColor = .specialYellow
         button.layer.cornerRadius = 10
         button.setTitle("Add workout", for: .normal)
         button.setImage(UIImage(named: "plus"), for: .normal)
-        button.tintColor = #colorLiteral(red: 0.1807115376, green: 0.3627874255, blue: 0.332313329, alpha: 1)
+        button.tintColor = .specialDarkGreen
+        button.titleLabel?.font = .robotoMedium12()
         button.imageEdgeInsets = .init(top: 0,
                                        left: 20,
                                        bottom: 15,
@@ -43,6 +46,7 @@ class MainViewController: UIViewController {
                                        left: -40,
                                        bottom: 0,
                                        right: 0)
+        button.addShadowOnView()
         button.addTarget(self, action: #selector(addWorkoutButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -59,7 +63,7 @@ class MainViewController: UIViewController {
     }
     
     private func setupViews(){        //2.добавили объект
-        view.backgroundColor = #colorLiteral(red: 0.9532949328, green: 0.94272995, blue: 0.9085446, alpha: 1)
+        view.backgroundColor = .specialBackground
         
         view.addSubview(calendarView)
         view.addSubview(userPhotoImageView)

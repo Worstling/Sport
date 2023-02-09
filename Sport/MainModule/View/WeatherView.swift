@@ -19,6 +19,8 @@ class WeatherView: UIView {
     private let weatherStatusLabel: UILabel = {
     let statusLabel = UILabel()
     statusLabel.text = "Солнечно"
+    statusLabel.textColor = .specialGray
+    statusLabel.font = .robotoMedium18()
     statusLabel.adjustsFontSizeToFitWidth = true
     statusLabel.minimumScaleFactor = 0.5
     statusLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -30,7 +32,8 @@ class WeatherView: UIView {
         label.text = "Хорошая погода, чтобы позаниматься"
         label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 2
-        label.textColor = UIColor.gray
+        label.textColor = .specialGray
+        label.font = .robotoMedium14()
         label.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -51,6 +54,7 @@ class WeatherView: UIView {
     private func setupViews() {
         backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         layer.cornerRadius = 10
+        addShadowOnView()
         translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(weatherIconImageView)

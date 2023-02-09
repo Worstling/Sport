@@ -9,6 +9,18 @@ import UIKit
 
 class CalendarView: UIView {
     
+    private let collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 3
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.backgroundColor = .none
+        return collectionView
+    }()
+    
+    private let idCalendarCell =  "idCalendarCell"
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -19,9 +31,25 @@ class CalendarView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     private func setupViews() {
-        backgroundColor = #colorLiteral(red: 0.2421774566, green: 0.6150763035, blue: 0.5633368492, alpha: 1)
+        backgroundColor = .specialGreen
         layer.cornerRadius = 10
         translatesAutoresizingMaskIntoConstraints = false 
+    
+     addSubview(collectionView)
+    }
+}
+
+//MARK - UICollectionViewDataSource
+
+extension CalendarView: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+        
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
     }
 }
 

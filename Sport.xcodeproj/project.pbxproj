@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		CE37AB732994244400B03F6C /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE37AB712994244400B03F6C /* Roboto-Medium.ttf */; };
 		CE37AB742994244400B03F6C /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE37AB722994244400B03F6C /* Roboto-Bold.ttf */; };
-		CE37AB792995408200B03F6C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37AB782995408200B03F6C /* UIView.swift */; };
+		CE37AB7B2995560D00B03F6C /* UIFont + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37AB7A2995560C00B03F6C /* UIFont + Extensions.swift */; };
+		CE37AB7D2995568A00B03F6C /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37AB7C2995568A00B03F6C /* UIColor + Extensions.swift */; };
+		CE37AB7F299556CF00B03F6C /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37AB7E299556CF00B03F6C /* UIView + Extensions.swift */; };
 		CE82F4DF28FF115100FB6AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82F4DE28FF115100FB6AF0 /* AppDelegate.swift */; };
 		CE82F4E128FF115100FB6AF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82F4E028FF115100FB6AF0 /* SceneDelegate.swift */; };
 		CE82F4E328FF115100FB6AF0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82F4E228FF115100FB6AF0 /* MainViewController.swift */; };
@@ -22,7 +24,9 @@
 /* Begin PBXFileReference section */
 		CE37AB712994244400B03F6C /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		CE37AB722994244400B03F6C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
-		CE37AB782995408200B03F6C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		CE37AB7A2995560C00B03F6C /* UIFont + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extensions.swift"; sourceTree = "<group>"; };
+		CE37AB7C2995568A00B03F6C /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
+		CE37AB7E299556CF00B03F6C /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
 		CE82F4DB28FF115100FB6AF0 /* Sport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE82F4DE28FF115100FB6AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE82F4E028FF115100FB6AF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +69,9 @@
 		CE37AB762995401E00B03F6C /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				CE37AB782995408200B03F6C /* UIView.swift */,
+				CE37AB7A2995560C00B03F6C /* UIFont + Extensions.swift */,
+				CE37AB7C2995568A00B03F6C /* UIColor + Extensions.swift */,
+				CE37AB7E299556CF00B03F6C /* UIView + Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -216,10 +222,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFF1B5129096D8D0029BF61 /* WeatherView.swift in Sources */,
+				CE37AB7B2995560D00B03F6C /* UIFont + Extensions.swift in Sources */,
 				CE82F4E328FF115100FB6AF0 /* MainViewController.swift in Sources */,
 				CE82F4DF28FF115100FB6AF0 /* AppDelegate.swift in Sources */,
 				CEFF1B4F2901E2560029BF61 /* CalendarView.swift in Sources */,
-				CE37AB792995408200B03F6C /* UIView.swift in Sources */,
+				CE37AB7D2995568A00B03F6C /* UIColor + Extensions.swift in Sources */,
+				CE37AB7F299556CF00B03F6C /* UIView + Extensions.swift in Sources */,
 				CE82F4E128FF115100FB6AF0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
